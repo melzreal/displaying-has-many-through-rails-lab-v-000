@@ -1,14 +1,9 @@
-<%= form_for @patient do |f| %>
-  <p>Name: <%= f.text_field :name %></p>
-  <ul>
-    <%= f.fields_for :appointments do |appointment| %>
-    <li>
-      appointment: <%= appointment.text_field :date %>
-      qty: <%= appointment.text_field :time %>
-    </li>
-    <% end %>
-    <%= link_to 'doctor', doctor_path(f) %>
-    
-  </ul>
-  <%= f.submit %>
-<% end %>
+<%= @patient.name %>
+<% %>
+<% %>
+<% %>
+<% %>
+<% %>
+<% %>
+<% %>
+<% %>

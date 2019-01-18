@@ -7,7 +7,7 @@
       qty: <%= ingredient.text_field :quantity %>
     </li>
     <% end %
-    <%= link_to 'doctor', @appointment.doctor_path %>
+    <%= link_to 'doctor', @appointment.doctor %>
   </ul>
   <%= f.submit %>
 <% end %>
