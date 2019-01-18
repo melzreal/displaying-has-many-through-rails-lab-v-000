@@ -1,12 +1,6 @@
 <%= form_for @appointment do |f| %>
-  <p>Title: <%= f.text_field :title %></p>
-  <ul>
-    <%= f.fields_for :ingredients do |ingredient| %>
-    <li>
-      name: <%= ingredient.text_field :name %>
-      qty: <%= ingredient.text_field :quantity %>
-    </li>
-    <% end %
+
+
     <%= link_to 'doctor', @appointment.doctor %>
   </ul>
   <%= f.submit %>
