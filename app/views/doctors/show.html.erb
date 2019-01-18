@@ -2,5 +2,5 @@
 <%= @doctor.department %>
 <% @doctor.appointments.each do |p| %>
 <%= p.patient.name %>
-<%= p.datetime %>
+<%= p.appointment_datetime %>
 <% end %>
