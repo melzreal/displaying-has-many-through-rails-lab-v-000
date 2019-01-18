@@ -1,7 +1,4 @@
-<%= form_for @appointment do |f| %>
-
-
-    <%= link_to 'doctor', @appointment.doctor %>
-  </ul>
-  <%= f.submit %>
+<%= @appointment.doctor.name %>
+<%= @appointment.appointment_datetime %>
+<%= link_to @appointment.doctor %>
 <% end %>
